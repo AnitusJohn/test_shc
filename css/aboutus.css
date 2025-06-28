@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.about_us_pg{
+    padding: 115px 0;
+}
+.about_us_pg h1{
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    margin: 40px 0 20px 0;
+}
+.about_us_width{
+    height: auto;
+    overflow: hidden;
+    border-radius: 30px;
+    width: 400px;
+    border: 1px solid;
+    float: left;
+}
+.about_us_width img{
+    width: 100%;
+overflow-y: hidden;
+}
+.about_content{
+    background: url('../images/help_bg.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat:no-repeat ;
+    background-size: 100% 100%;
+    color: #fff;
+    padding: 20px;
+    text-transform: capitalize;
+    height: 30vh;
+}
+.about_us_pg span{
+    width: 100%;
+text-align: center;
+font-size: 31px;
+  font-weight: 700;
+}
+.sub_head_abt{
+    width: 100%;
+    float: left;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.sub_head_abt_txt{
+    float: left;
+    width: 100%;
+    margin-bottom:50px;
+}
+
+.about_us_width div{
+    color: #9e564d;
+  font-weight: 800;
+  font-size: 23px;
+}
+.mrg_cntr{
+    margin-left: 30%;
+    margin-bottom: 10%;
+    --shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset
+}
+.mrg_non{
+    margin-bottom: 0 !important;
+}
+@media screen and (max-width: 556px) {
+  
+
+    .about_us_width{
+        width: auto !important;
+    }
+
+    .mrg_cntr{
+        margin-left: 10%;
+    }
+  
+  }
+  .form-group .hidden{
+    display: block !important;
+  }

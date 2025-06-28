@@ -1,0 +1,13 @@
+@media (min-width: 360px) and (max-width: 556px) {
+    .news{
+      padding: 13px ;
+    
+    }
+    #news-head::before{
+      top: 7px;
+
+    }
+    .nav__list{
+      padding-left: 0;
+    }
+  }

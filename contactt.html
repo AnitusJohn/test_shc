@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WhatsApp Contact Form - Dropdown</title>
+
+</head>
+<body>
+  <div class="form-container">
+    <h2>Contact </h2>
+    <form id="contactForm">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="place">Your Place:</label>
+      <input type="text" id="place" required>
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" rows="4" required></textarea>
+
+      <label>Select Recipient:</label>
+      <select id="whatsappContact" required>
+        <option value="" disabled selected>-- Choose a Person --</option>
+        <option value="918939260139">Person 1</option>
+        <option value="918939260139">Person 2</option>
+        <option value="918939260139">Person 3</option>
+        <option value="918939260139">Person 4</option>
+        <option value="917708767360">Person 5</option>
+        <option value="918939260139">Person 6</option>
+        <option value="918939260139">Person 7</option>
+        <option value="918939260139">Person 8</option>
+        <option value="918939260139">Person 9</option>
+      </select>
+
+      <button type="submit">Send to WhatsApp</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value;
+      const place = document.getElementById("place").value;
+      const message = document.getElementById("message").value;
+      const selectedPhone = document.getElementById("whatsappContact").value;
+
+      if (!selectedPhone) {
+        alert("Please select a recipient.");
+        return;
+      }
+
+      const fullMessage = `Hi, I am ${name} from ${place}. ${message}`;
+      const encodedMessage = encodeURIComponent(fullMessage);
+      const url = `https://wa.me/${selectedPhone}?text=${encodedMessage}`;
+      window.open(url, '_blank');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+.fa-whatsapp::before{
+    color: #fff;
+    background-color: #25d366;
+    font-size: 50px;
+  padding: 8px;
+  border-radius: 50px;
+}

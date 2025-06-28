@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <style>
+  
+
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .error {
+      color: #f00;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <form id="contactForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required><br>
+
+    <label for="options">Options:</label>
+    <select id="options" name="options" required>
+      <option value="general">General Inquiry</option>
+      <option value="support">Technical Support</option>
+      <option value="feedback">Feedback</option><br>
+    </select>
+
+    <button type="button" onclick="validateForm()">Send to WhatsApp</button>
+    <div id="errorMessage" class="error"></div> 
+</form>
+
+  <script>
+    function validateForm() {
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var phone = document.getElementById("phone").value;
+      var options = document.getElementById("options").value;
+
+      var errorElement = document.getElementById("errorMessage");
+
+      // Basic validation
+      if (name === "" || email === "" || phone === "" || options === "") {
+        errorElement.innerHTML = "All fields are required";
+        return;
+      }
+
+      // Email validation
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        errorElement.innerHTML = "Invalid email address";
+        return;
+      }
+
+      // Phone validation (simple check for numbers)
+      if (isNaN(phone)) {
+        errorElement.innerHTML = "Invalid phone number";
+        return;
+      }
+
+      // If all validations pass, create WhatsApp link
+      var whatsappLink = "https://api.whatsapp.com/send?phone=7708767360&text=" +
+        encodeURIComponent(`Name: ${name },Email: ${email},Phone: ${phone},Options: ${options}`);
+
+      // Open WhatsApp link in a new tab
+      window.open(whatsappLink, "_blank");
+
+      // Optional: Reset the form
+      document.getElementById("contactForm").reset();
+      errorElement.innerHTML = "";
+    }
+  </script>
+</body>
+</html>
