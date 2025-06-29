@@ -1,8 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>WhatsApp Contact Form - Dropdown</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <!-- marquee -->
+    <link rel="stylesheet" href="./css/marquee.css">
+    <link rel="stylesheet" href="./css/mobile_view.css">
+    <!-- whatapp_float -->
+    <link rel="stylesheet" href="./css/whatapp_float.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- footer -->
+    <link rel="stylesheet" href="./css/foot.css">
+    <link rel="stylesheet" href="./css/caro.css">
+
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="./css/content.css">
+
+<link rel="stylesheet" href="./css/church.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -21,6 +56,8 @@
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
       max-width: 400px;
       width: 100%;
+      /* overflow-y: scroll; */
+      margin-top: 320px;
     }
 
     h2 {
@@ -79,8 +116,149 @@
     }
   </style>
 </head>
+
 <body>
-  <div class="form-container">
+
+    <!-- marquee -->
+    <div class='News-footer'>
+        <div class='news'>
+            <span id='news-head'><b>செபம் </b></span>
+        </div>
+        <p class='N-text'>
+            <marquee direction='left'>
+                <span>
+
+                    இயேசுவின் திரு இருதயத்திற்கு குடும்பங்களை அர்ப்பணிக்கும் செபம் - 
+இயேசுவின் திருஇருதயமே எங்கள் குடும்பங்களை உமக்கு அர்ப்பணிக்கின்றோம். நன்றி கூறுகின்றோம். எங்களை ஆசீர்வதியும். எப்பொழுதும் இறை பிரசன்னத்தை உணர்ந்து வாழ வரம் தாரும். பலவீனர்களுக்கு பலத்தையும் செல்வம் உடையவர்கள் பிறருக்கு உதவி செய்யும் நல்ல மனதையும் தந்தருளும். விதவைகளுக்கும், அனாதைப் பிள்ளைகளுக்கும் நாங்கள் உதவியாய் இருக்க செய்தருளும். சிறையில் தனிமையில், நோயில், துன்பத்தில் இருக்கின்றவர்களை ஆசீர்வதியும். உலகிலுள்ள ஒவ்வொரு குழந்தைகளுக்கும் விசுவாசத்தையும், தெய்வ பயத்தையும், நல்ல ஒழுக்கத்தையும், பணிவையும், அறிவையும் தந்தருளும். மரண தருவாயில் இருக்கிறவர்களை நாள்தோறும் சந்தித்தருளும். ஆன்மாக்களை விண்ணத்தில் சேர்த்தருளும். எங்கள் அனைவருக்கும் அடைக்கலமாகவும், தஞ்சமாகவும், சாகும் தருவாயில் உதவியாகவும் இருந்தருளும். ஆமென்.
+                </span>
+               
+
+             
+                
+            </marquee>
+        </p>
+    </div>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+        <nav class=" container">
+            <div class="row">
+                <div class="col-md-4">
+
+                    <div class="nav__data">
+                        <a href="./index.html" class="nav__logo">
+                            <img style="width: 14%;" src="./images/old_blk.png" alt=""> Sacred Heart Church 
+                        </a>
+
+                        <div class="nav__toggle" id="nav-toggle">
+                            <i class="ri-menu-line nav__burger"></i>
+                            <i class="ri-close-line nav__close"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+
+                    <!--=============== NAV MENU ===============-->
+                    <div class="nav__menu" id="nav-menu">
+                        <ul class="nav__list">
+                            <li><a href="index.html" class="nav__link">Home</a></li>
+
+                            <li><a href="about.html" class="nav__link">About Us</a></li>
+
+                            <!--=============== DROPDOWN 1 ===============-->
+                            <!-- <li class="dropdown__item">
+               <div class="nav__link">
+                  Analytics <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+               </div>
+
+               <ul class="dropdown__menu">
+                  <li>
+                     <a href="#" class="dropdown__link">
+                        <i class="ri-pie-chart-line"></i> Overview
+                     </a>                          
+                  </li>
+
+                  <li>
+                     <a href="#" class="dropdown__link">
+                        <i class="ri-arrow-up-down-line"></i> Transactions
+                     </a>
+                  </li>
+
+                  <li class="dropdown__subitem">
+                     <div class="dropdown__link">
+                        <i class="ri-bar-chart-line"></i> Reports <i class="ri-add-line dropdown__add"></i>
+                     </div>
+
+                     <ul class="dropdown__submenu">
+                        <li>
+                           <a href="#" class="dropdown__sublink">
+                              <i class="ri-file-list-line"></i> Documents
+                           </a>
+                        </li>
+
+                        <li>
+                           <a href="#" class="dropdown__sublink">
+                              <i class="ri-cash-line"></i> Payments
+                           </a>
+                        </li>
+
+                        <li>
+                           <a href="#" class="dropdown__sublink">
+                              <i class="ri-refund-2-line"></i> Refunds
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+            </li> -->
+
+                            <li><a href="contact.html" class="nav__link">
+                                    Contact Us </a></li>
+
+                            <!--=============== DROPDOWN 2 ===============-->
+                            <li class="dropdown__item">
+                                <div class="nav__link">
+                                    Gallery <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                                </div>
+
+                                <ul class="dropdown__menu">
+                                    <li>
+                                        <a href="./videos.html" class="dropdown__link">
+                                            <i class="ri-vidicon-fill"></i> Videos
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="./images.html" class="dropdown__link">
+                                            <i class="ri-image-fill"></i> Images
+                                        </a>
+                                    </li>
+
+
+                                </ul>
+                            </li>
+
+                            <li><a href="./donation.html" class="nav__link">
+                                    <span>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="heart"
+                                            style="width: 25px; padding:3px; "
+                                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                            <path fill="#ff0000"
+                                                d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+                                        </svg>
+                                        <span> Make Donation</span>
+                                    </span>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div class="form-container">
     <h2>Contact </h2>
     <form id="contactForm">
       <label for="name">Your Name:</label>
@@ -94,14 +272,14 @@
 
       <label>Select Recipient:</label>
       <select id="whatsappContact" required>
-        <option value="" disabled selected>-- Choose a Person --</option>
-        <option value="918939260139">Person 1</option>
-        <option value="918939260139">Person 2</option>
-        <option value="918939260139">Person 3</option>
-        <option value="918939260139">Person 4</option>
-        <option value="917708767360">Person 5</option>
-        <option value="918939260139">Person 6</option>
-        <option value="918939260139">Person 7</option>
+        <option value="" disabled selected>-- Choose --</option>
+        <option value="918939260139">முதலாம்  அன்பியம் தலைவர் </option>
+        <option value="918939260139">இரண்டாம் அன்பியம் தலைவர்</option>
+        <option value="918939260139">மூன்றாம் அன்பியம் தலைவர்</option>
+        <option value="918939260139">நான்காம் அன்பியம் தலைவர் </option>
+        <option value="917708767360">ஐந்தாம் அன்பியம் தலைவர்</option>
+        <option value="918939260139">ஆறாம் அன்பியம் தலைவர்</option>
+        <option value="918939260139">ஏழாம் அன்பியம் தலைவர்</option>
         <option value="918939260139">Person 8</option>
         <option value="918939260139">Person 9</option>
       </select>
@@ -130,5 +308,34 @@
       window.open(url, '_blank');
     });
   </script>
+    <!-- bg_fix -->
+ 
+
+
+
+
+    <!-- footer -->
+    
+
+    <a href="https://wa.me/918939260139?text=Hi%20May I help you with anything?" class="float" style="
+    position: fixed;
+    /* color: #fff; */
+    bottom: 10%;
+    right: 10%;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px #999;
+  ">
+          <i class="fa fa-whatsapp my-float"></i>
+      </a>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="js/nav.js"></script>
+
+    <!-- <script src="./js/jquery.js"></script> -->
+    <!-- <script src="./js/bootstrap.min.js"></script> -->
+
 </body>
+
 </html>
